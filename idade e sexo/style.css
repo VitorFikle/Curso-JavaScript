@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
+
+* {
+    font-family: 'Funnel Display', sans-serif;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    background-color: #2e33c5;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    width: 400px;
+    height: auto;
+}
+
+#resultado img {
+    width: 200px;
+    height: auto;
+
+}
+
+#submit {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #2e33c5;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+#submit:hover {
+    transform: scale(1.1);
+    background-color: #fff;
+    color: #1a1a1a;
+}
