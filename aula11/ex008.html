@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Descubra se você é estrangeiro!</h1>
+    Qual a sua nacionalidade?<input type="text" id="nacionalidade" placeholder="Digite sua nacionalidade">
+    <button id="btn">E aí?</button>
+    <p id="res">Você é...</p>
+    <script>
+        const pais = document.querySelector('#nacionalidade')
+        const botao = document.querySelector('#btn')
+        const resposta = document.querySelector('#res')
+
+        botao.addEventListener('click', function () {
+            if (pais.value.trim().toLowerCase() !== 'brasil') {
+                resposta.innerHTML = 'Você é estrangeiro! 🌎'
+            }
+            else {
+                resposta.innerHTML = `Você é Brasileiro! <img src="https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg" 
+                width="24" 
+                style="vertical-align: middle;">
+                `
+            }
+        })
+    </script>
+</body>
+
+</html>

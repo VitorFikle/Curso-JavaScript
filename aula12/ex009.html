@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Você pode votar?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Descubra se você pode votar.</h1>
+    Quantos anos você tem?<input type="text" id="userage" placeholder="Digite sua idade...">
+    <button id="btn">E aí?</button>
+    <p id="res">Você pode...</p>
+    <script>
+        const botao = document.querySelector('#btn')
+        const result = document.querySelector('#res')
+
+        botao.addEventListener('click', function () {
+            const age = Number(document.querySelector('#userage').value)
+            if (age >= 18) {
+                result.innerHTML = 'Você pode votar.'
+            }
+            else {
+                if (age == 16 || age == 17) {
+                    result.innerHTML = 'Você pode votar, mas é facultativo.'
+                }
+                else {
+                    result.innerHTML = 'Você NÃO pode votar.'
+                }
+            }
+
+        })
+    </script>
+</body>
+
+</html>
