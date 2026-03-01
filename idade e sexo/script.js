@@ -22,27 +22,28 @@ window.onLoad = () => {
         const img = document.createElement('img')
 
         if (sexo === 'mas' && idade < 18) { //homem
-            img.src = 'imgs/menino.jpg'
+            img.src = 'imgs/menino.webp'
         }
         else if (sexo === 'mas' && idade >= 60) {
-            img.src = 'imgs/velho.jpg'
+            img.src = 'imgs/velho.webp'
         }
         else if (sexo === 'mas' && idade >= 18) {
-            img.src = 'imgs/homem.jpg'
+            img.src = 'imgs/homem.webp'
         }
 
         else if (sexo === 'fem' && idade >= 60) { //mulher
-            img.src = 'imgs/velha.jpg'
+            img.src = 'imgs/velha.webp'
         }
         else if (sexo === 'fem' && idade < 18) {
-            img.src = 'imgs/menina.jpg'
+            img.src = 'imgs/menina.webp'
         }
         else if (sexo === 'fem' && idade >= 18) {
-            img.src = 'imgs/mulher.jpg'
+            img.src = 'imgs/mulher.webp'
         }
 
         resultado.innerHTML = ''
         resultado.appendChild(img)
     })
+
 
 }
