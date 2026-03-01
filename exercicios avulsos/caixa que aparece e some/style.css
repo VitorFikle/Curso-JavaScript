@@ -1,0 +1,20 @@
+* {
+    background: #333;
+    color: #fff;
+}
+
+#button {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.box {
+    background-color: blue;
+    width: 6em;
+    height: 6em;
+    text-align: center;
+    /* display: none; */
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2</title>
+</head>
+
+<body>
+    <button id="botao">Clique aqui</button>
+    <p class="p">Olá, mundo!</p>
+
+    <script>
+        const btn = document.querySelector('#botao')
+        btn.addEventListener('click', alterarTexto)
+
+        function alterarTexto() {
+            const p = document.querySelector('.p')
+            p.innerText = 'Tchau, mundo!'
+        }
+    </script>
+</body>
+
+</html>
