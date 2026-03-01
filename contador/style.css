@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
+
+* {
+    font-family: 'Zain';
+}
+
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: cornflowerblue;
+}
+
+.content {
+    width: 42.5em;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f3f3;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+h1{
+    margin-top: -10px;
+}
+
+#action {
+    gap: 10px;
+}
+
+footer p{
+    font-size: 1.5em;
+    color: #f3f3f3;
+}
+
+#submit{
+    background-color: blueviolet;
+    border: none;
+    cursor: pointer;
+    padding: 0.5em 1em;
+    align-self: center;
+    border-radius: 10px;
+    color: #fff;
+}
+
+#submit:hover{
+    background-color: blue;
+}
